@@ -27,14 +27,14 @@ namespace JMT
                 link();
             }
 
-            Program_Shadders(params JMT::Shadder sh):Program_Shadders()
-            {
-                for(int i = 0; i<sh.length(); i++)
-                {
-                    append(sh[i]);
-                }
-                link();
-            }
+//            Program_Shadders(JMT::Shadder **sh, int n):Program_Shadders()
+//            {
+//                for(int i = 0; i<n; i++)
+//                {
+//                    append(*sh[i]);
+//                }
+//                link();
+//            }
 
             void append(Shadder& referencia);
 
