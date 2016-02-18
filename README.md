@@ -1,2 +1,0 @@
-# openglLib
-OpenGL Lib
