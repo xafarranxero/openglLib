@@ -27,14 +27,15 @@ namespace JMT
                 link();
             }
 
-//            Program_Shadders(JMT::Shadder **sh, int n):Program_Shadders()
-//            {
-//                for(int i = 0; i<n; i++)
-//                {
-//                    append(*sh[i]);
-//                }
-//                link();
-//            }
+            Program_Shadders(JMT::Shadder **sh, int n):Program_Shadders()
+            {
+                for(int i = 0; i<n; i++)
+                {
+//                    append(sh[i]->getId());
+                    glAttachShader(id,sh[i]->getId());
+                }
+                link();
+            }
 
             void append(Shadder& referencia);
 
