@@ -37,6 +37,11 @@ namespace JMT
                 link();
             }
 
+            GLint GetUniformLocation(const char* c)
+            {
+                return glGetUniformLocation(id,c);
+            }
+
             void append(Shadder& referencia);
 
             void link();
